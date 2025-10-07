@@ -1,12 +1,72 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{375135EF-4855-4631-8A4F-71A565B80115}|Application\\Application.vcxproj|C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{375135EF-4855-4631-8A4F-71A565B80115}|Application\\Application.vcxproj|solutionrelative:Application\\src\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375135EF-4855-4631-8A4F-71A565B80115}|Application\\Application.vcxproj|C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{375135EF-4855-4631-8A4F-71A565B80115}|Application\\Application.vcxproj|solutionrelative:Application\\include\\Application.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{375135EF-4855-4631-8A4F-71A565B80115}|Application\\Application.vcxproj|C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{375135EF-4855-4631-8A4F-71A565B80115}|Application\\Application.vcxproj|solutionrelative:Application\\src\\Application.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\src\\Main.cpp",
+              "RelativeDocumentMoniker": "Application\\src\\Main.cpp",
+              "ToolTip": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\src\\Main.cpp",
+              "RelativeToolTip": "Application\\src\\Main.cpp",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-06T23:30:30.451Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Application.h",
+              "DocumentMoniker": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\include\\Application.h",
+              "RelativeDocumentMoniker": "Application\\include\\Application.h",
+              "ToolTip": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\include\\Application.h",
+              "RelativeToolTip": "Application\\include\\Application.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-07T00:18:33.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Application.cpp",
+              "DocumentMoniker": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\src\\Application.cpp",
+              "RelativeDocumentMoniker": "Application\\src\\Application.cpp",
+              "ToolTip": "C:\\Users\\Lalo\\Documents\\ComputoGrafico_AngelEduardo_17867\\Proyectos\\Application\\src\\Application.cpp",
+              "RelativeToolTip": "Application\\src\\Application.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-06T23:26:45.591Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

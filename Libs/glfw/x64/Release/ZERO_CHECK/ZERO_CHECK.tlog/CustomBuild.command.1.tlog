@@ -1,0 +1,10 @@
+^C:\USERS\LALO\DOCUMENTS\COMPUTOGRAFICO_ANGELEDUARDO_17867\LIBS\GLFW\CMAKEFILES\2F407FA6BC1D6D15681320A39679C070\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Lalo/Documents/ComputoGrafico_AngelEduardo_17867/Libs/glfw -BC:/Users/Lalo/Documents/ComputoGrafico_AngelEduardo_17867/Libs/glfw --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Lalo/Documents/ComputoGrafico_AngelEduardo_17867/Libs/glfw/GLFW.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
