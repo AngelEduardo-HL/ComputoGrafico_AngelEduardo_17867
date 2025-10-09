@@ -2,6 +2,7 @@
 #include <vector>
 #include <map>
 #include "glad.h"
+#include <iostream>
 
 class Application
 {
@@ -15,6 +16,10 @@ private:
 	};
 
 	std::map<std::string, GLuint> ids;
+
+	// Refactorizacion de la Geometria que estaba en Setup
+	void SetUpGeometry();
+
 public:
 	void Setup();
 	void Update();

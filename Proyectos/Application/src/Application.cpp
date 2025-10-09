@@ -1,7 +1,9 @@
 #include "Application.h"
+#include "ShaderFuncs.h"
 #include <iostream>
 
-void Application::Setup()
+// Refactorizacion de la Geometria que estaba en Setup
+void Application::SetUpGeometry()
 {
 	//Crear VAO
 	GLuint VAO, VBO;
@@ -20,12 +22,19 @@ void Application::Setup()
 		&geometry[0],
 		GL_STATIC_DRAW); //Mandamos la geometria el Buffer
 
-	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0);
+	glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, 0, 0); //(index, size, type, normalized, stride, pointer)
 	glEnableVertexAttribArray(0);
+}
+
+void Application::Setup()
+{
+	SetUpGeometry(); // Llamo a la funcion que crea la geometria
+	GLuint program = InitializeProgramFromFiles("Shaders/VertextShader.glsl", "Shaders/FragmentShader.glsl"); //Cargo y compilo los shaders
+	//std::cout << "setup()" << std::endl;
 }
 void Application::Update()
 {
-	std::cout << "update()" << std::endl;
+	//std::cout << "update()" << std::endl;
 }
 void Application::Draw()
 {
