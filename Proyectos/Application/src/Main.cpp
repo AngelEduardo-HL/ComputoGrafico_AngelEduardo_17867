@@ -28,6 +28,7 @@ int main(void)
     }
 
 	app.Setup();
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -35,14 +36,13 @@ int main(void)
         /* Render here */
         glClear(GL_COLOR_BUFFER_BIT);
 
-        /* Swap front and back buffers */
-        //glfwSwapBuffers(window);
-
         /* Poll for and process events */
         glfwPollEvents();
-		app.Update();
+        app.Update();
 
 		app.Draw();
+        /* Swap front and back buffers */
+        glfwSwapBuffers(window);
     }
 
     glfwTerminate();

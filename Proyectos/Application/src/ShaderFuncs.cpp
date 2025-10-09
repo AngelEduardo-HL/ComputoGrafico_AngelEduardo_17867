@@ -103,6 +103,5 @@ GLuint InitializeProgramFromFiles(const std::string& vsPath, const std::string& 
 {
 	const std::string vsSource = LoadTextFile(vsPath);
 	const std::string fsSource = LoadTextFile(fsPath);
-
 	return InitializeProgram(vsSource, fsSource);
 }

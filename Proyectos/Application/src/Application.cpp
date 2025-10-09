@@ -29,7 +29,8 @@ void Application::SetUpGeometry()
 void Application::Setup()
 {
 	SetUpGeometry(); // Llamo a la funcion que crea la geometria
-	GLuint program = InitializeProgramFromFiles("Shaders/VertextShader.glsl", "Shaders/FragmentShader.glsl"); //Cargo y compilo los shaders
+	GLuint ShadersID = InitializeProgramFromFiles("Shaders/VertextShader.glsl", "Shaders/FragmentShader.glsl"); //Cargo y compilo los shaders
+	ids["program"] = ShadersID; //Guardo el ID del programa de shaders
 	//std::cout << "setup()" << std::endl;
 }
 void Application::Update()
@@ -38,5 +39,11 @@ void Application::Update()
 }
 void Application::Draw()
 {
-	std::cout << "draw()" << std::endl;
+	glUseProgram(ids["program"]); //Uso el programa de shaders
+
+	glBindVertexArray(ids["triangle"]); //Digo que geometria voy a usar
+
+	glDrawArrays(GL_TRIANGLES, 0, 3); //Dibujo la geometria
+
+	//std::cout << "draw()" << std::endl;
 }
