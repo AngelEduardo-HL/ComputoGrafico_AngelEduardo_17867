@@ -40,6 +40,10 @@ int main(void)
         glfwPollEvents();
         app.Update();
 
+		//salir si se presiona ESC
+        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+			glfwSetWindowShouldClose(window, true);
+
 		app.Draw();
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
