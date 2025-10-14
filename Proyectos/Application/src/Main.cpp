@@ -2,6 +2,13 @@
 #include "GLFW/glfw3.h"
 #include "Application.h"
 
+// Callback que se ejecuta cuando se presiona una tecla
+void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
+    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
+        glfwSetWindowShouldClose(window, true);
+    }
+}
+
 int main(void)
 {
     GLFWwindow* window;
@@ -27,6 +34,8 @@ int main(void)
 		return -1;
     }
 
+    glfwSetKeyCallback(window, keyCallback);
+
 	app.Setup();
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
@@ -40,9 +49,8 @@ int main(void)
         glfwPollEvents();
         app.Update();
 
-		//salir si se presiona ESC
-        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-			glfwSetWindowShouldClose(window, true);
+		//Llama a la funcion para cerrar la ventana con la tecla escape
+        
 
 		app.Draw();
         /* Swap front and back buffers */
